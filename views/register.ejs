@@ -1,0 +1,34 @@
+<%- include("header") -%>
+
+    <section class="sec1">
+      <h2>Register</h2>
+
+      <form class="queueForm" action="/auth/register" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" name="name" class="form-control" placeholder="Enter Full Name" required>
+        </div>
+        <div class="form-group">
+          <label for="username">Email:</label>
+          <input id="username" type="text" name="username" class="form-control" placeholder="Enter Email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" name="password" class="form-control" placeholder="Enter Password" required>
+        </div>
+        <div class="form-group">
+          <label for="otp">OTP:</label>
+          <button id="otpBtn" class="otpBtn" type="button" name="button">Send OTP</button>
+          <input id="otp" type="number" name="otp" class="form-control" required>
+        </div>
+        <button id="regBtn" type="submit" name="button" class="subBtn">Register</button>
+      </form>
+
+      <p>Already have an account, <a href="/auth">Login</a></p>
+    </section>
+
+    <!--Local Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/scripts/index.js"></script>
+  </body>
+</html>
