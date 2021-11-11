@@ -1,4 +1,0 @@
-secure-smtplib
-Flask
-gunicorn
-flask-cors
