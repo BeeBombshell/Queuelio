@@ -22,3 +22,5 @@ This project **implements virtual queues which will ensure social distancing** a
 - Simultaneous Synchronisation of admin & queue members with instant Updates.✨
 - Implementing Queue Data structure in MongoDB.📃
 - Building OTP API just from scratch using Flask.📝
+
+### [Live](https://queuelio.herokuapp.com)
