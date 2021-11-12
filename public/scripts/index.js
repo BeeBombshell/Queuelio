@@ -37,7 +37,7 @@ otpBtn.on("click", () => {
 
   const emailId = $("#username").val();
   if(emailId != ""){
-    let url = "https://otp--flask-api.herokuapp.com/id?="+emailId;
+    let url = "https://otp--flask-api.herokuapp.com/OTP?id="+emailId;
     
     $.getJSON(url, (data) => {
       otp = data.OTP;
