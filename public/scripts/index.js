@@ -38,12 +38,12 @@ otpBtn.on("click", () => {
   const emailId = $("#username").val();
   if(emailId != ""){
     let url = "https://otp--flask-api.herokuapp.com/id?="+emailId;
-    console.log("tried to call otp api")
+    
     $.getJSON(url, (data) => {
       otp = data.OTP;
     });
 
-    const alertMessage = "Check OTP on your email Id: "+emailId;
+    const alertMessage = "Check OTP on your email Id: "+otp;
     alert(alertMessage);
     otpBtn.css("display", "none");
   }else{
