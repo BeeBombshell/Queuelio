@@ -43,7 +43,7 @@ otpBtn.on("click", () => {
       otp = data.OTP;
     });
 
-    const alertMessage = "Check OTP on your email Id: "+ emailId;
+    const alertMessage = "Check OTP on your email Id:"+emailId;
     alert(alertMessage);
     otpBtn.css("display", "none");
   }else{
