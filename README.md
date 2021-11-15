@@ -10,7 +10,7 @@ This project **implements virtual queues which will ensure social distancing** a
 **“ With Queuelio, you can just scan the OR code 📱, enter the virtual world of queues and wait for your turn to arrive. Timely notifications 🔔 will keep the user updated about his position in the Queue.”**
 
 ## Key-Features✨
-- **Just scan the OR code!** 📱
+- **Just scan the QR code!** 📱
 - **Enter the virtual world of queues and wait for your turn to arrive.** 👥
 - **Timely notifications/sound alerts will keep the user updated about his position/Time Left in the Queue.** 🔔
 - **Automated Check-in Authentication System for Following the Queue.** 🔐
