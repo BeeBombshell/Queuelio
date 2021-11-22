@@ -31,6 +31,7 @@ router.post("/", (req, res) => {
       });
     }
   });
+  
 });
 
 router.get("/register",isLogedIn, (req, res) => {
