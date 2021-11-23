@@ -37,7 +37,7 @@ mongoose.set('useCreateIndex', true);
 app.use("/", indexRouter);
 app.use("/auth", authRouter);
 app.use("/queue", queueRouter);
-
+// app.use("/logout",indexRouter)
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running on port 3000");

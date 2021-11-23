@@ -8,8 +8,16 @@ const { auth, isLogedIn } = require('../Midlewares/auth.js');
 const User = require("../models/user");
 
 router.get("/",isLogedIn, (req, res) => {
-
   res.render("login", {isLogedIn: req.isLogedIn});
+  
+});
+router.get("/logout", isLogedIn, (req, res) => {
+  
+    req.logout();
+
+    console.log("logged out")
+    res.redirect('/');
+  
 });
 
 router.post("/", (req, res) => {
@@ -26,11 +34,14 @@ router.post("/", (req, res) => {
         if(typeof(req.session.redirectedFrom) != 'undefined'){
             res.redirect(req.session.redirectedFrom);
         }else{
+          console.log(user)
           res.redirect("/");
         }
       });
     }
   });
+
+  
   
 });
 
