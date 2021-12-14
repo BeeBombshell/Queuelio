@@ -1,7 +1,7 @@
 {
   "name": "queuelio",
   "version": "1.0.0",
-  "description": "",
+  "description": "An express application to create and manage virtual queues",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
