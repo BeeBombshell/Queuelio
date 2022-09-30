@@ -25,4 +25,7 @@ passport.deserializeUser(function(id, done) {
   });
 });
 
-module.exports = User;
+module.exports = {
+  name : "User",
+  model : mongoose.model("user", userSchema)
+}

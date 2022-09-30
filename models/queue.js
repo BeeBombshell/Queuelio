@@ -10,4 +10,7 @@ const queueSchema = new mongoose.Schema({
   joinedUsersName: [String]
 });
 
-module.exports = mongoose.model("Queue", queueSchema);
+module.exports = {
+  name : "Queue",
+  model : mongoose.model("Queue", queueSchema)
+}

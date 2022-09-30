@@ -1,6 +1,6 @@
 const Queue = require("../models/queue");
 
-async function getJoinedQueues(req, res, next){
+const getJoinedQueues = async (req, res, next) => {
 
   await Queue.find((err, foundQueues) => {
     let joinedQueues = [];
