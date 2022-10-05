@@ -1,4 +1,4 @@
-require("dotenv").config({ path: "../config/config.env" });
+require("dotenv").config({ path: "./config.env" });
 const { DB_NAME, DB_USER, DB_HOST, DB_PASS, DB_DRIVER, DB_PORT } = process.env;
 
 module.exports = {
