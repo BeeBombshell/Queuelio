@@ -2,18 +2,18 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
-const router = require("./api/routes");
-dotenv.config({ path: "./config.env" });
+const router = require("./routes");
+dotenv.config({});
 const path = require("path");
-global.db = require("./db/index").getContext();
+global.db = require("../db/index").getContext();
 app.use(bodyParser.urlencoded({ extended: true }));
 let validator = require("express-joi-validation")({
   passError: true,
 });
-const ResHelper = require('./utils/response')
+const ResHelper = require('../utils/response')
 global._validate = validator;
 app.use(express.json());
-require("./api/routes")(app, validator);
+require("./routes")(app, validator);
 app.use((err, req, res, next) => {
   if (err.error.isJoi) {
     let errDetail = [];

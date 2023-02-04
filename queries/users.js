@@ -1,4 +1,3 @@
-const db = require("../db/index").getContext();
 const utils = require("../utils/response");
 const insert = (data) => {
   return new Promise(async (resolve, reject) => {
